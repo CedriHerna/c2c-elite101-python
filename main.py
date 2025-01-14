@@ -22,21 +22,22 @@ print("\nHow can I help you? Type the number of option below\n")
 # 4. Should return the package IDs of all packages in shipment
 # 5. This exit should give an option to give feedback to the ChatBot and the services it provides.(Is it possible to hold the feedback so I can see it?)
 
-# These are blank variables that will be filled later on with a proper dictionary
-
 
 
 
 def user_home():
+    # These are temperary variables that will proboably later become ararys of information
     dictionary_location = "Austin, Tx"
     dictionary_date_of_arrival = "11/11/2024"
-    
+
+    # This is an array to all me to easily print the options in an array, as I think I'll be printing this repeatedly.
     array_options = ["1. Where is my package?", "2. What is the price of a certain item?", "3. Create a ticket", "4. List of package IDs", "5. Exit the ChatBot"]
 
-
+    # Temperary print statement for the viewer to see the options
     for option in array_options:
         print(option)
 
+    # This is a input that will allow the user to selct an option
     choice = input("\n")
 
     if(choice == "1"):
@@ -60,13 +61,16 @@ def user_home():
     elif(choice == "5"):
         print("Have a great day, " + name + "!")
     else:
+        # This is in case there are extranious responses
         print("Return a valid response (Just the number at the start of each option. Eg. \"1\")")
 
 
-
+# This allows the user choice to be processesd through the function "user_home()" 
 user_home()
 
 
+
+#                             V V V V V V         UNDER THIS IS TEMPERARY CODE THAT I USED TO IMPROVE THE CODE ABOVE        V V V V V V
 
 
 # for option in array_options:
